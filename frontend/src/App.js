@@ -17,7 +17,7 @@ function App() {
       const registers = await axios.get('http://localhost:8080/get');
       setUsers(registers.data)
     } catch(error) {
-      toast.error(error);
+      toast.error(error)
     }
   }
   
